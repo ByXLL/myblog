@@ -1,0 +1,60 @@
+{extend name="layout/sub" /}
+{block name='content'}
+
+
+<div class="layui-form" lay-filter="layuiadmin-form-tags" id="layuiadmin-app-form-tags" style="padding-top: 30px; text-align: center;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">分类名</label>
+        <div class="layui-input-inline">
+        <input  type="text" name="tags" lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input class-input-txt">
+        </div>
+    </div>
+</div>
+
+{/block}
+
+{block name='js'}
+<script src=""></script>
+<script>
+
+var $ = layui.$
+    ,form = layui.form
+    ,tags = $('input[name="tags"]')
+//.is(':checked')
+
+function getId(){
+    //获取URL中的ID
+    var url = location.href;
+    var theRequest = new Object();
+    var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+    if (url.indexOf("?") != -1) {
+        for (var i = 0; i < paraString.length; i++) {
+            theRequest[paraString[i].split("=")[0]] = unescape(paraString[i].split("=")[1]);
+        }
+    }
+    var Id = theRequest["id"];
+    console.log(Id);
+    return Id;
+}
+
+
+
+
+//页面值修改
+$.ajax({
+    type: "get",
+    url:'{:url("index/get_content_tags_id")}',
+    data: {
+        id:getId()
+    },
+    success: function(msg){
+        tags.val(msg.tag);
+    }
+})
+
+
+
+
+
+</script>
+{/block}

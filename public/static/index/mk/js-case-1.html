@@ -1,0 +1,285 @@
+<!DOCTYPE html><html><head><title>JS中的数据类型</title><meta charset='utf-8'><link href='css/mk.css' rel='stylesheet'><style>
+.note-content  {font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+<h3 id="js中的数据类型">JS中的数据类型</h3>
+
+<blockquote>
+  <ul><li>基本数据类型（值类型） <br>
+  <ul>
+  <li>number：数字</li>
+  <li>string字符串</li>
+  <li>boolean：布尔</li>
+  <li>null：口对象指针</li>
+  <li>undefined：未定义</li></ul></li>
+  <li>引用数据类型 <br>
+  <ul>
+  <li>object：对象数据类型 <br>
+  <ul>
+  <li>{}：普通对象</li>
+  <li>[]：数组</li>
+  <li>/^$%：正则 <br>
+  …</li></ul></li>
+  <li>function：函数数据类型</li></ul></li>
+  </ul>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-JavaScript hljs"><div class="hljs-line"><span class="hljs-string">'ABC'</span> <span class="hljs-string">"ABC"</span> -&gt;单双引号包裹起来的都是字符串（单双引号没有区别）
+</div><div class="hljs-line"><span class="hljs-literal">true</span> <span class="hljs-literal">false</span> -&gt; 布尔类型：只有两个值
+</div><div class="hljs-line"><span class="hljs-literal">null</span>
+</div><div class="hljs-line"><span class="hljs-literal">undefined</span>
+</div></code></pre>
+
+<p>这么多数据类型JS这么去检测？</p>
+
+<ul><li>typeof：检测数据类型的运算符</li>
+<li>instanceof：检测某个实例是否属于这个类</li>
+<li>constructor：获取当前实例的构造器</li>
+<li>Object.prototype.toString.call：获取当前实例的所属类信息</li>
+</ul>
+
+<p><strong>typeof</strong></p>
+
+<blockquote>
+  <p>使用typeof检测，返回的结果是一个字符串，字符串中包含的内容证明了值是属于什么类型的 <br>
+  [局限性] <br>
+  1、typeof null 不是”null”而是”object”，因为null虽然是单独的一个数据类型，但是它原本意思是空对象指针，浏览器使用typeof检测的时候会把它按照对象去检测。 <br>
+  2、使用typeof无法细分出是数组还是正则，因为返回的结果都是”object”。</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">var</span> num = <span class="hljs-number">1</span>;
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> num =&gt; <span class="hljs-string">"number"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-string">"ABC"</span> =&gt; <span class="hljs-string">"string"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span> =&gt; <span class="hljs-string">"boolean"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span> =&gt; <span class="hljs-string">"object"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span> =&gt; <span class="hljs-string">"undefined"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> [] =&gt; <span class="hljs-string">"object"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> /^$/ =&gt; <span class="hljs-string">"object"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> {<span class="hljs-attr">name</span>:<span class="hljs-string">"xiaoming"</span>} =&gt; <span class="hljs-string">"object"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{} =&gt; <span class="hljs-string">"function"</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-comment">/*简单实例*/</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-literal">NaN</span> =&gt; <span class="hljs-string">"number"</span>
+</div><div class="hljs-line"><span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">typeof</span> []); =&gt; <span class="hljs-string">"string"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> [] =&gt; <span class="hljs-string">"object"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span> <span class="hljs-string">"object"</span> =&gt; <span class="hljs-string">"string"</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-keyword">typeof</span>检测出来的都是字符串，字符串里面包含的内容才是想要的，在多次检测的时候，第二次的值都为字符串类型的，所以最后的结果都是<span class="hljs-string">"string"</span>
+</div></code></pre>
+
+<hr>
+
+
+
+<h3 id="字符串">字符串</h3>
+
+<blockquote>
+  <p>在JS中单引号和双引号包起来的都是字符串 <br>
+  <strong>常用方法</strong></p>
+  
+  <ul><li>charAt charCodeAt</li>
+  <li>substr substring slice</li>
+  <li>toUpperCase toLowerCase</li>
+  <li>indexOf lastIndexOf</li>
+  <li>replace</li>
+  <li>match</li>
+  <li>……</li>
+  </ul>
+</blockquote>
+
+<hr>
+
+
+
+<h3 id="number">number</h3>
+
+<p><strong><code>Number()</code></strong></p>
+
+<blockquote>
+  <p>把其他类型值转换为number类型的值 <br>
+   使用Number()换的时候，只要字符串中出现<strong>任何一个<code>非有效数字字符</code></strong>，最后结果都是NaN。 <br>
+   在把引用数据类型转换为number时，会隐式地把引用数据类型转换为字符串（<code>.toString()</code>），再把字符串转换为number。 <br>
+   通俗地记忆，除true、false、null外，只有有效数字和只有一项且为有效数字的数组，才能返回数字，其余全部返回NaN</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-literal">true</span>) =&gt; <span class="hljs-number">1</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-literal">false</span>) =&gt; <span class="hljs-number">0</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-literal">null</span>) =&gt; <span class="hljs-number">0</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-literal">undefined</span>) =&gt; <span class="hljs-literal">NaN</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-string">"12.3"</span>) =&gt; <span class="hljs-number">12.3</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-string">"12.3.4"</span>) =&gt; <span class="hljs-literal">NaN</span>     <span class="hljs-comment">//注意第二个点，使得数值变得没有意义，就不是一个数字</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-string">"1px"</span>) =&gt; <span class="hljs-literal">NaN</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>([]) =&gt; [] -&gt; <span class="hljs-string">""</span>  <span class="hljs-string">""</span> -&gt; <span class="hljs-number">0</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>([<span class="hljs-number">1</span>]) =&gt; [<span class="hljs-number">1</span>] -&gt; <span class="hljs-string">"1"</span> <span class="hljs-string">"1"</span> -&gt; <span class="hljs-number">1</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]) =&gt; [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>] -&gt; <span class="hljs-string">"1,2"</span> <span class="hljs-string">"1,2"</span> -&gt; <span class="hljs-literal">NaN</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>({}) =&gt; <span class="hljs-literal">NaN</span>       <span class="hljs-comment">//({}).toString() =&gt; "[object Object]"</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Number</span>({<span class="hljs-attr">name</span>:<span class="hljs-string">'xiaoming'</span>}) =&gt; <span class="hljs-literal">NaN</span>
+</div></code></pre>
+
+<hr>
+
+<p><strong><code>parseInt()</code></strong></p>
+
+<blockquote>
+  <p>数据类型值转换为number，和Number()方法在处理字符串的时候有区别 <br>
+  <strong>提取规则</strong>：从左到右依次查找有效数字字符，直到遇见非有效数字字符为止（不管后面是否还有），把找到的转换为数字。</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-JavaScript hljs"><div class="hljs-line"><span class="hljs-built_in">Number</span>(<span class="hljs-string">"1px"</span>) =&gt; <span class="hljs-literal">NaN</span>
+</div><div class="hljs-line"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"1px"</span>) =&gt; <span class="hljs-number">1</span>
+</div><div class="hljs-line"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"px1"</span>) =&gt; <span class="hljs-literal">NaN</span>
+</div><div class="hljs-line"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"1px2"</span>) =&gt; <span class="hljs-number">1</span>
+</div><div class="hljs-line"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"1.2px"</span>) =&gt; <span class="hljs-number">1</span>
+</div></code></pre>
+
+<hr>
+
+<p><strong><code>parseFloat()</code></strong></p>
+
+<blockquote>
+  <p>在parseInt的基础上识别小数</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"1.2px"</span>) =&gt; <span class="hljs-number">1.2</span>
+</div></code></pre>
+
+<hr>
+
+<p><strong><code>NaN</code></strong></p>
+
+<blockquote>
+  <p>Not a Number：意思是（不是一个数），<strong>但是属于number类型</strong>。 <br>
+  NaN == NaN ：false，NaN和<strong>任何值</strong>都不相等。</p>
+</blockquote>
+
+<p><strong><code>isNaN()</code></strong></p>
+
+<blockquote>
+  <p>返回结果：true或者false。 <br>
+  用来检测当前这个值<strong>是否为非有效数字</strong>（是不是不是一个数），如果不是有效数字检测结果是true，反之，是一个有效数字则为false。</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-built_in">isNaN</span>(<span class="hljs-number">0</span>) =&gt; <span class="hljs-literal">false</span>
+</div><div class="hljs-line"><span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">NaN</span>) =&gt; <span class="hljs-literal">true</span>
+</div><div class="hljs-line"><span class="hljs-built_in">isNaN</span>(<span class="hljs-string">"12"</span>) =&gt; <span class="hljs-literal">false</span> -&gt; <span class="hljs-built_in">isNaN</span>(<span class="hljs-number">12</span>) =&gt; <span class="hljs-literal">false</span>
+</div><div class="hljs-line"><span class="hljs-built_in">isNaN</span>(<span class="hljs-literal">true</span>) =&gt; <span class="hljs-literal">false</span>
+</div><div class="hljs-line"><span class="hljs-built_in">isNaN</span>([]) =&gt; <span class="hljs-literal">false</span>
+</div></code></pre>
+
+<blockquote>
+  <p>当我们使用isNaN去检测一个值的时候，检测的值不是number类型的，浏览器会先将值<strong>转换为number类型</strong>，然后再去检测。</p>
+</blockquote>
+
+<hr>
+
+
+
+<h3 id="布尔">布尔</h3>
+
+<p><strong><code>Boolean ()</code></strong></p>
+
+<blockquote>
+  <p>把其他类型的值转换为布尔类型</p>
+  
+  <p>只有<code>0、空字符串、NaN、null、undefined</code>这五个数据的值转换为布尔类型是false，<strong>其他的都是true</strong>。</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-built_in">Boolean</span>(<span class="hljs-number">-1</span>) =&gt; <span class="hljs-literal">true</span>
+</div><div class="hljs-line"><span class="hljs-built_in">Boolean</span>([]) =&gt; <span class="hljs-literal">true</span>
+</div></code></pre>
+
+<p><strong><code>!</code></strong></p>
+
+<blockquote>
+  <p>叹号在JS中的一个作用<strong><code>取反</code></strong>，先把值转换为布尔值，然后去取反。 <br>
+  != ：不等于 <br>
+  一个<code>!</code>为取反，<code>!!</code>为取两次反，相当于没有取反，<strong>但是却把其他数据类型转换为布尔值</strong>，与Boolean ()相同的效果</p>
+</blockquote>
+
+<hr>
+
+
+
+<h3 id="null与undefined">null与undefined</h3>
+
+<blockquote>
+  <p>null：空，没有 <br>
+  undefined：未定义，没有</p>
+</blockquote>
+
+<p><code>空字符串与null的区别</code></p>
+
+<blockquote>
+  <p>打个比方：种树 <br>
+  空字符串：相当于挖了个坑，却没有种 <br>
+  null：坑都没有挖 <br>
+  空字符串相对于null来说，空字符串在内存开辟了空间，而没有存值。</p>
+</blockquote>
+
+<p><code>null与undefined的区别</code></p>
+
+<blockquote>
+  <p>打个比方：存钱买房 <br>
+  null：暂时没有钱，但是产生了一个构想，慢慢工作，以后会有钱了买房，结果可能实现或不实现。 <br>
+  undefined：白日梦，什么都不会发生，你已经失业了，赚不了钱了。</p>
+</blockquote>
+
+<hr>
+
+
+
+<h3 id="object">object</h3>
+
+<blockquote>
+  <p>对象的属性名是唯一性 <br>
+  每一个对象都是由零到多组<code>属性名（key键）：属性值（value值）</code>组成，每一组键值对中间用<code>逗号</code>分隔。 <br>
+  <strong>属性</strong>：描述这个对象特征的描述，例如（你的名字），字符串类型。 <br>
+  <strong>属性值</strong>：这个对象特征的描述的具体值，例如（小明），任意类型。 <br>
+  对象的属性名可以是字符串或者数字格式。 <br>
+  对象的属性的属性值可以是任意数据类型。 <br>
+  如果操作的属性名在对象中不存在，则获取的结果为undefined。</p>
+  
+  <ul><li>操作属性的办法 <br>
+  <ul>
+  <li>对象名.属性名：忽略属性名的单双引号。</li>
+  <li>对象名[’属性名‘]：不能忽略单双引号。</li></ul></li>
+  <li>设置修改属性的方法 <br>
+  <ul>
+  <li><code>oStu.sex = '男';</code>    -&gt;未定义过的属性，为设置对象的属性</li>
+  <li><code>oStu.age = '21';</code>   -&gt;已经定义过的属性，为修改对象的属性</li></ul></li>
+  <li>删除属性 <br>
+  <ul>
+  <li><code>oStu.age = null;</code>    -&gt;假删除，让其属性值为null，但是属性还在对象中</li>
+  <li><code>delete oStu.age;</code>    -&gt;真删除，把整个属性在对象中移除</li></ul></li>
+  </ul>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"> <span class="hljs-keyword">var</span> obj = {属性名 ：属性值 , 属性名 ：属性值}
+</div><div class="hljs-line"> <span class="hljs-keyword">var</span> oStu = {<span class="hljs-attr">name</span>:<span class="hljs-string">'小明'</span>,<span class="hljs-attr">age</span>:<span class="hljs-number">20</span>,<span class="hljs-attr">family</span>:[<span class="hljs-string">'爸爸'</span>,<span class="hljs-string">'妈妈'</span>],<span class="hljs-number">0</span>:<span class="hljs-number">100</span>}
+</div><div class="hljs-line"> oStu.name;
+</div><div class="hljs-line"> oStu[<span class="hljs-string">'name'</span>];
+</div><div class="hljs-line"> oStu.sex =&gt; <span class="hljs-literal">undefined</span>
+</div><div class="hljs-line"> oStu.family[<span class="hljs-number">0</span>];
+</div><div class="hljs-line"> <span class="hljs-comment">//如果属性名是数字</span>
+</div><div class="hljs-line"> oStu<span class="hljs-number">.0</span> -&gt; 语法不支持
+</div><div class="hljs-line"> oStu[<span class="hljs-number">0</span>] 或者 oStu[<span class="hljs-string">'0'</span>]
+</div></code></pre></div></body></html>

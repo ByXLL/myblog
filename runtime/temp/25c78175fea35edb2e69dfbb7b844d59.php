@@ -1,0 +1,153 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:77:"C:\xampp\htdocs\blog\public/../application/admin\view\index\forum_replys.html";i:1560695098;s:59:"C:\xampp\htdocs\blog\application\admin\view\layout\sub.html";i:1560741994;}*/ ?>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="/blog/public//static/admin/layuiadmin/layui/css/layui.css" media="all">
+<link rel="stylesheet" href="/blog/public//static/admin/layuiadmin/style/admin.css" media="all">
+
+
+<body>
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-body">
+            <div style="padding-bottom: 10px;">
+            <button class="layui-btn layuiadmin-btn-replys" data-type="batchdel">删除</button>
+            </div>
+            <table id="LAY-app-forumreply-list" lay-filter="LAY-app-forumreply-list"></table> 
+            <script type="text/html" id="imgTpl">
+            <img style="display: inline-block; width: 50%; height: 100%;" src= {{ d.avatar }}>
+            </script>  
+            <script type="text/html" id="table-forum-replys">
+            <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+<script src="/blog/public//static/admin/layuiadmin/layui/layui.all.js"></script>
+
+<script src=""></script>
+<script>
+
+
+/** layuiAdmin.std-v1.2.1 LPPL License By http://www.layui.com/admin/ */ ;
+layui.define(["table", "form"], function(e) {
+    var t = layui.$,
+        i = layui.table;
+    layui.form;
+    i.render({
+        elem: "#LAY-app-forumreply-list",
+        url: "/blog/public//static/admin/layuiadmin/json/forum/replys.js",
+        cols: [
+            [{
+                type: "checkbox",
+                fixed: "left"
+            }, {
+                field: "id",
+                width: 100,
+                title: "ID",
+                sort: !0
+            }, {
+                field: "replyer",
+                title: "回帖人"
+            }, {
+                field: "cardid",
+                title: "回帖ID",
+                sort: !0
+            }, {
+                field: "avatar",
+                title: "头像",
+                width: 100,
+                templet: "#imgTpl"
+            }, {
+                field: "content",
+                title: "回帖内容",
+                width: 200
+            }, {
+                field: "replytime",
+                title: "回帖时间",
+                sort: !0
+            }, {
+                title: "操作",
+                width: 150,
+                align: "center",
+                fixed: "right",
+                toolbar: "#table-forum-replys"
+            }]
+        ],
+        page: !0,
+        limit: 10,
+        limits: [10, 15, 20, 25, 30],
+        text: "对不起，加载出现异常！"
+    }), i.on("tool(LAY-app-forumreply-list)", function(e) {
+        e.data;
+        if ("del" === e.event) layer.confirm("确定删除此条评论？", function(t) {
+            e.del(), layer.close(t)
+        });
+        else if ("edit" === e.event) {
+            t(e.tr);
+            layer.open({
+                type: 2,
+                title: "编辑评论",
+                content: "../../../views/app/forum/replysform.html",
+                area: ["550px", "350px"],
+                btn: ["确定", "取消"],
+                resize: !1,
+                yes: function(t, i) {
+                    var l = i.find("iframe").contents().find("#layuiadmin-form-replys"),
+                        r = l.find('textarea[name="content"]').val();
+                    e.update({
+                        content: r
+                    }), layer.close(t)
+                },
+                success: function(e, t) {}
+            })
+        }
+    }), e("forum", {})
+});
+
+
+
+
+var $ = layui.$
+    ,form = layui.form
+    ,table = layui.table;
+    
+    var active = {
+      batchdel: function(){
+        var checkStatus = table.checkStatus('LAY-app-forumreply-list')
+        ,checkData = checkStatus.data; //得到选中的数据
+
+        if(checkData.length === 0){
+          return layer.msg('请选择数据');
+        }
+      
+        layer.confirm('确定删除吗？', function(index) {
+          
+          //执行 Ajax 后重载
+          /*
+          admin.req({
+            url: 'xxx'
+            //,……
+          });
+          */
+          table.reload('LAY-app-forumreply-list');
+          layer.msg('已删除');
+        });
+      }
+    }
+    
+    $('.layui-btn.layuiadmin-btn-replys').on('click', function(){
+      var type = $(this).data('type');
+      active[type] ? active[type].call(this) : '';
+    });
+
+
+
+
+</script>

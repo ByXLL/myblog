@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>三元运算符</title><meta charset='utf-8'><link href='css/mk.css' rel='stylesheet'><style>
+.note-content  {font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h3 id="三元运算符">三元运算符</h3>
+
+<blockquote>
+  <p>条件？条件成立执行：条件不成立执行 <br>
+  简单if、else判断的另外一种写法</p>
+  
+  <p>等同于：</p>
+  
+  <p>if(条件){ <br>
+  }else{ <br>
+  }</p>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">var</span> a = <span class="hljs-number">3</span>;
+</div><div class="hljs-line"><span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span>){
+</div><div class="hljs-line">    a++;
+</div><div class="hljs-line">}<span class="hljs-keyword">else</span>{
+</div><div class="hljs-line">    a--;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-comment">//等同于</span>
+</div><div class="hljs-line">num&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span> ? a++ : a--;
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span>){
+</div><div class="hljs-line">    a++;
+</div><div class="hljs-line">}
+</div><div class="hljs-line">num&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span> ? a++ : ;     <span class="hljs-comment">//语法报错</span>
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-comment">//如果只有if没有else，使用null、undefined、void 0，来占位完善语法</span>
+</div><div class="hljs-line">num&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span> ? a++ : <span class="hljs-literal">null</span>;
+</div></code></pre>
+
+<hr>
+
+<p><strong>多事件处理</strong></p>
+
+<blockquote>
+  <p>当我们在判断完成需要执行多件事情的时候，在三元表达式中，可以用小括号括起来，用逗号连接。 <br>
+  但是不能出现，<strong>break、continue、return</strong>，这些关键字，否则语法报错。</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span>){
+</div><div class="hljs-line">    a++;
+</div><div class="hljs-line">    <span class="hljs-built_in">console</span>.log(a);
+</div><div class="hljs-line">}
+</div><div class="hljs-line">num&gt;<span class="hljs-number">1</span> &amp;&amp; a&lt;=<span class="hljs-number">5</span> ? (a++,<span class="hljs-built_in">console</span>.log(a)) : <span class="hljs-literal">null</span>;
+</div></code></pre>
+
+<hr>
+
+<p><strong>嵌套</strong></p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>；
+</div><div class="hljs-line"><span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">0</span>){
+</div><div class="hljs-line">    <span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">20</span>){
+</div><div class="hljs-line">        a++;
+</div><div class="hljs-line">    }<span class="hljs-keyword">else</span>{
+</div><div class="hljs-line">        a+=<span class="hljs-number">2</span>;
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">}<span class="hljs-keyword">else</span>{
+</div><div class="hljs-line">    <span class="hljs-keyword">if</span>(a&gt;<span class="hljs-number">-5</span>){
+</div><div class="hljs-line">        a=<span class="hljs-number">0</span>;
+</div><div class="hljs-line">        alert(a);
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-comment">//转换成三元表达式</span>
+</div><div class="hljs-line">a&gt;<span class="hljs-number">0</span>?(a&gt;<span class="hljs-number">20</span>?a++:a+=<span class="hljs-number">2</span>):(a&gt;<span class="hljs-number">-5</span>?(a=<span class="hljs-number">0</span>,alert(a)):<span class="hljs-literal">null</span>);
+</div></code></pre>
+
+<hr>
+
+<p><strong>高级玩法</strong></p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line">$(<span class="hljs-string">'ul li'</span>)[ hover ? <span class="hljs-string">'addClass'</span> : <span class="hljs-string">'removeClass'</span>](<span class="hljs-string">'active'</span>);
+</div><div class="hljs-line"><span class="hljs-comment">//当条件为true的时候</span>
+</div><div class="hljs-line">$(<span class="hljs-string">'ul li'</span>)[<span class="hljs-string">'addClass'</span>](<span class="hljs-string">'active'</span>);
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line"><span class="hljs-comment">//当然了，你还可以调用函数</span>
+</div><div class="hljs-line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{
+</div><div class="hljs-line">    ......
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>)</span>{
+</div><div class="hljs-line">    ......
+</div><div class="hljs-line">}
+</div><div class="hljs-line">flag ? a() : b();
+</div></code></pre>
+
+<hr>
+
+<blockquote>
+  <p>小白自我理解，如有错误，望大佬指点。</p>
+</blockquote></div></body></html>

@@ -1,0 +1,58 @@
+{extend name="layout/sub" /}
+{block name='content'}
+<div class="layui-form" lay-filter="layuiadmin-form-comment" id="layuiadmin-form-comment"
+    style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">回复</label>
+        <div class="layui-input-block">
+            <textarea name="content" placeholder="请输入" class="layui-textarea"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <label class="layui-form-label"></label>
+        <div class="layui-input-inline">
+            <input type="button" lay-submit lay-filter="layuiadmin-app-comm-submit" id="layuiadmin-app-comm-submit"
+                value="确认" class="layui-btn">
+        </div>
+    </div>
+</div>
+
+
+{/block}
+
+{block name='js'}
+<script src=""></script>
+<script>
+
+var $ = layui.$
+    ,form = layui.form
+    ,content = $('textarea[name="content"]')
+function getId(){
+    //获取URL中的ID
+    var url = location.href;
+    var theRequest = new Object();
+    var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+    if (url.indexOf("?") != -1) {
+        for (var i = 0; i < paraString.length; i++) {
+            theRequest[paraString[i].split("=")[0]] = unescape(paraString[i].split("=")[1]);
+        }
+    }
+    var Id = theRequest["id"];
+    return Id;
+}
+getId();
+//页面值修改
+$.ajax({
+    type: "get",
+    url:'{:url("index/get_comment_id")}',
+    data: {
+        id:getId()
+    },
+    success: function(msg){
+        content.val(msg.reply);
+    }
+})
+
+
+</script>
+{/block}

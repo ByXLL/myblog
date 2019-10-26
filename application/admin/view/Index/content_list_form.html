@@ -1,0 +1,170 @@
+{extend name="layout/sub" /}
+{block name='content'}
+
+<div class="layui-form" lay-filter="test-filter" action="javascript:;">
+    <div class="layui-form" lay-filter="layuiadmin-app-form-list" id="layuiadmin-app-form-list"
+        style="padding: 20px 30px 0 0;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">文章标题</label>
+            <div class="layui-input-inline">
+                <input type="text" name="title" lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">简介</label>
+            <div class="layui-input-inline">
+                <input type="text" name="author" lay-verify="required" placeholder="请输入昵称" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">文章内容</label>
+            <div class="layui-input-inline">
+                <textarea name="content" lay-verify="required" style="width: 400px; height: 150px;" autocomplete="off"
+                    class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <!-- <div class="layui-form-item">
+            <label class="layui-form-label">标签</label>
+            <div class="layui-input-inline">
+                <select name="label" lay-verify="required">
+                    <option value="">请选择标签</option>
+                    <option value="前端">前端</option>
+                    <option value="响应式">响应式</option>
+                    <option value="后台">后台</option>
+                    <option value="layui">layui</option>
+                    <option value="jQuery">jQuery</option>
+                </select>
+            </div>
+        </div> -->
+
+
+
+        
+        <div class="layui-form-item">
+            <label class="layui-form-label">文章分类</label>
+            <div class="layui-input-block" id="tags" name="label">
+                {foreach $tags as $vo} 
+                    <input type="checkbox" name="lable{$vo.id}" value="{$vo.tag}" title="{$vo.tag}" >
+                {/foreach}
+                
+
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">发布状态</label>
+            <div class="layui-input-inline">
+                <!-- <input type="checkbox" id="status-switch" lay-verify="required" lay-filter="status" name="status" lay-skin="switch"
+                    lay-text="已发布|待修改"     > -->
+                    <input type="checkbox" class="test-switch" lay-verify="required" lay-filter="switch" name="switch" lay-skin="switch" lay-text="已发布|待修改">
+            </div>
+        </div>
+
+        <!-- <div class="layui-form-item">
+            <div class="layui-input-block">
+            <button onclick="on()" class="layui-btn">on</button>
+            <button onclick="off()" class="layui-btn">off</button>
+            </div>
+        </div> -->
+        <div class="layui-form-item layui-hide">
+            <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit"
+                value="确认添加">
+            <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit"
+                value="确认编辑">
+        </div>
+    </div>
+</div>
+
+{/block}
+
+{block name='js'}
+
+<script>
+var $ = layui.$
+    ,form = layui.form
+    ,title = $('input[name="title"]')
+    ,author = $('input[name="author"]')
+    ,content = $('textarea[name="content"]')
+    ,label_array = new Array()
+    ,olabels = $("#tags>input")
+    ,status = 0;
+
+    layui.use('form', function () {
+        form.val('test-filter', {
+            "switch": status == 1
+        });
+        form.render();
+    });
+    //页面值修改
+    $.ajax({
+        type: "get",
+        url:'{:url("index/get_content_list_id")}',
+        data: {
+            id:getId()
+        },
+        success: function(msg){
+            title.val(msg.title)
+            ,author.val(msg.author)
+            ,content.val(msg.content)            
+            //,label.val(msg.label)
+            ,status = msg.status;
+            if(status == 1){
+                form.val('test-filter', {
+                    "switch": true
+                });
+                form.render();
+            }else{
+                form.val('test-filter', {
+                    "switch": false
+                });
+                form.render();
+            };
+            var strs=msg.label.split(","); //字符分割 
+            for(i=0;i<olabels.length; i++){
+                for(j=0; j<strs.length; j++){
+                    if(olabels[i].title == strs[j]){
+                       // olabels[i].attr('checked');
+                        olabels[i].nextSibling.className +=' layui-form-checked';       //下一个兄弟节点添加样式
+                    }
+                }
+            }
+
+            form.render('select');      //重置select
+            // form.render('checkbox');    //重置switch
+
+        }
+    })
+
+//
+//console.log('重载后页面状态'+status);  
+
+
+
+function getId(){
+    //获取URL中的ID
+    var url = location.href;
+    var theRequest = new Object();
+    var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+    if (url.indexOf("?") != -1) {
+        for (var i = 0; i < paraString.length; i++) {
+            theRequest[paraString[i].split("=")[0]] = unescape(paraString[i].split("=")[1]);
+        }
+    }
+    var Id = theRequest["id"];
+    return Id;
+}
+
+
+
+
+//监听提交
+form.on('submit(layuiadmin-app-form-submit)', function(data){
+    var field = data.field; //获取提交的字段
+    var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引  
+    parent.layui.table.reload('LAY-app-content-list'); //重载表格
+    parent.layer.close(index); //再执行关闭 
+});
+</script>
+{/block}

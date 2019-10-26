@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>获取URL传递的参数值queryURLParameter的几个实现方法</title><meta charset='utf-8'><link href='css/mk.css' rel='stylesheet'><style>
+.note-content  {font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h3 id="获取url传递的参数值queryurlparameter的几个实现方法">获取URL传递的参数值queryURLParameter的几个实现方法</h3>
+
+<blockquote>
+  <p>获取地址栏中URL地址传递的参数 <br>
+  <a href="http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20" target="_blank">http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20</a></p>
+</blockquote>
+
+
+
+<h5 id="方法一使用字符串拆分方法">方法一：使用字符串拆分方法</h5>
+
+<blockquote>
+  <p>思路：</p>
+  
+  <ul><li>先将url地址中多余的字符（域名等）去掉，截取到想要的部分</li>
+  <li>通过’&amp;’拆分每一组键值对，将各组键值对存入数组</li>
+  <li>通过循环拿出数组中的每一项，来通过’=’拆分，获得键和值</li>
+  <li>将拆分出来的键和值存入对象</li>
+  </ul>
+</blockquote>
+
+
+
+<h6 id="思路代码">思路代码</h6>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">var</span> str = <span class="hljs-string">'http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20'</span>;
+</div><div class="hljs-line"><span class="hljs-keyword">var</span> questionIndex = str.indexOf(<span class="hljs-string">'?'</span>),<span class="hljs-comment">//获得'?'出现的索引，通过这个索引截取后面真正想要的参数的索引</span>
+</div><div class="hljs-line">    str = str.substring(questionIndex + <span class="hljs-number">1</span>),<span class="hljs-comment">//截取'?'后面的字符 -&gt;'name=admin&amp;password=Aa123456&amp;age=20'</span>
+</div><div class="hljs-line">    ary = str.split(<span class="hljs-string">'&amp;'</span>),<span class="hljs-comment">//通过'&amp;'来拆分-&gt;["name=admin","password=Aa123456","age=20"]</span>
+</div><div class="hljs-line">    obj = {}; <span class="hljs-comment">//新建空对象存储</span>
+</div><div class="hljs-line"><span class="hljs-keyword">for</span>( <span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;ary.length; i++){<span class="hljs-comment">//获取数组中的每一项，单独拆分</span>
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> cur = ary[i],<span class="hljs-comment">//通过循环获取到数组的的每一项    -&gt;name=admin</span>
+</div><div class="hljs-line">        curAry = cur.split(<span class="hljs-string">'='</span>),<span class="hljs-comment">//通过'='来拆分，存入数组中    -&gt;["name","admin"]</span>
+</div><div class="hljs-line">        key = curAry[<span class="hljs-number">0</span>], <span class="hljs-comment">// -&gt;'name'</span>
+</div><div class="hljs-line">        value = curAry[<span class="hljs-number">1</span>];<span class="hljs-comment">// -&gt;'admin'</span>
+</div><div class="hljs-line">    obj[key] = value;
+</div><div class="hljs-line">}
+</div></code></pre>
+
+
+
+<h6 id="封装之后">封装之后</h6>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">queryURLParameter</span>(<span class="hljs-params">url</span>) </span>{
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> quesIndex = url.indexOf(<span class="hljs-string">'?'</span>),
+</div><div class="hljs-line">        obj = {};
+</div><div class="hljs-line">    <span class="hljs-keyword">if</span> (quesIndex === <span class="hljs-number">-1</span>) {     <span class="hljs-comment">//URL中没有传参，直接返回空对象</span>
+</div><div class="hljs-line">        <span class="hljs-keyword">return</span> obj;
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">    url = url.substring(quesIndex + <span class="hljs-number">1</span>);
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> ary = url.split(<span class="hljs-string">'&amp;'</span>);
+</div><div class="hljs-line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; ary.length; i++) {
+</div><div class="hljs-line">       <span class="hljs-keyword">var</span> curAry = ary[i].split(<span class="hljs-string">'='</span>);
+</div><div class="hljs-line">       obj[curAry[<span class="hljs-number">0</span>]] = curAry[<span class="hljs-number">1</span>]; 
+</div><div class="hljs-line">    }
+</div><div class="hljs-line">    <span class="hljs-keyword">return</span> obj;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-built_in">console</span>.log(queryURLParameter(<span class="hljs-string">'http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20'</span>));
+</div></code></pre>
+
+<hr>
+
+
+
+<h5 id="方法二强大的正则">方法二：强大的正则</h5>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-built_in">String</span>.prototype.queryURLParameter = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">queryURLParameter</span>(<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> obj = {},
+</div><div class="hljs-line">        reg = <span class="hljs-regexp">/([^=?&amp;]+)=([^=?&amp;]+)/g</span>;
+</div><div class="hljs-line">    <span class="hljs-keyword">this</span>.replace(reg,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+</div><div class="hljs-line">        <span class="hljs-keyword">var</span> arg = <span class="hljs-built_in">arguments</span>;
+</div><div class="hljs-line">        obj[arg[<span class="hljs-number">1</span>]] = arg[<span class="hljs-number">2</span>];
+</div><div class="hljs-line">    });
+</div><div class="hljs-line">    <span class="hljs-keyword">return</span> obj;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-keyword">var</span> str = <span class="hljs-string">'http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20'</span>;
+</div><div class="hljs-line"><span class="hljs-built_in">console</span>.log(str.queryURLParameter());
+</div></code></pre>
+
+<hr>
+
+
+
+<h5 id="方法三动态创建a标签">方法三：动态创建a标签</h5>
+
+<blockquote>
+  <p>通过动态创建a标签，通过a标签自带的属性结合正则进行拆分</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-keyword">var</span> link = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a'</span>);
+</div><div class="hljs-line">link.href=<span class="hljs-string">'http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20'</span>;
+</div><div class="hljs-line"><span class="hljs-built_in">console</span>.dir(link);
+</div><div class="hljs-line"><span class="hljs-comment">// hostname:"www.baidu.com" -&gt;域名</span>
+</div><div class="hljs-line"><span class="hljs-comment">// search:"?name=admin&amp;password=Aa123456&amp;age=20"    -&gt;传递的参数</span>
+</div><div class="hljs-line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">queryURLParameter</span>(<span class="hljs-params">url</span>) </span>{
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> link = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a'</span>);
+</div><div class="hljs-line">    link.href = url;
+</div><div class="hljs-line">    <span class="hljs-keyword">var</span> search = link.search,
+</div><div class="hljs-line">        obj = {};
+</div><div class="hljs-line">    <span class="hljs-keyword">if</span> (search.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>; 
+</div><div class="hljs-line">    search = search.substr(<span class="hljs-number">1</span>).split(<span class="hljs-regexp">/&amp;|=/g</span>);     <span class="hljs-comment">//substr(1) -&gt;从第一个字符开始截取，split(/&amp;|=/g) -&gt; 正则拆分</span>
+</div><div class="hljs-line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; search.length; i+=<span class="hljs-number">2</span>) {
+</div><div class="hljs-line">        <span class="hljs-keyword">var</span> key = search[i],
+</div><div class="hljs-line">            value = search[i+<span class="hljs-number">1</span>];
+</div><div class="hljs-line">        obj[key] = value;
+</div><div class="hljs-line">    };
+</div><div class="hljs-line">    link = <span class="hljs-literal">null</span>;
+</div><div class="hljs-line">    <span class="hljs-keyword">return</span> obj;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-built_in">console</span>.log(queryURLParameter(<span class="hljs-string">'http://www.baidu.com/?name=admin&amp;password=Aa123456&amp;age=20#root'</span>));
+</div></code></pre>
+
+<hr>
+
+<blockquote>
+  <p>以上来自个人理解，如有错误，望大佬指点。</p>
+</blockquote></div></body></html>

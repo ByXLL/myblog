@@ -1,0 +1,4054 @@
+---------------------------------------------------------------
+[ 2019-08-30T15:22:28+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/
+[运行时间：0.073013s] [吞吐率：13.70req/s] [内存消耗：2,381.93kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/index\view\index\index.html [ array (
+  0 => 'contents',
+  1 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000873s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011813s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.011546s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:22:34+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/dmin
+[运行时间：0.044597s] [吞吐率：22.42req/s] [内存消耗：1,198.94kb] [文件加载：35]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'dmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:22:42+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin
+[运行时间：0.037242s] [吞吐率：26.85req/s] [内存消耗：1,534.27kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:22:42+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/login/index.html
+[运行时间：0.032096s] [吞吐率：31.16req/s] [内存消耗：1,559.59kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\login->index[ C:\xampp\htdocs\blog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:22:51+08:00 ] 127.0.0.1 POST 127.0.0.1/blog/public/admin/login/login.html
+[运行时间：0.051867s] [吞吐率：19.28req/s] [内存消耗：2,235.80kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '35',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'loginname' => 'admin',
+  'password' => 'admin',
+)
+[ info ] [ RUN ] app\admin\controller\login->login[ C:\xampp\htdocs\blog\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_admin` [ RunTime:0.012242s ]
+[ sql ] [ SQL ] SELECT `password`,`loginname` FROM `user_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:22:58+08:00 ] 127.0.0.1 POST 127.0.0.1/blog/public/admin/login/login.html
+[运行时间：0.045411s] [吞吐率：22.02req/s] [内存消耗：2,237.66kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '36',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'loginname' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\login->login[ C:\xampp\htdocs\blog\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_admin` [ RunTime:0.009542s ]
+[ sql ] [ SQL ] SELECT `password`,`loginname` FROM `user_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:22:59+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/index.html
+[运行时间：0.074106s] [吞吐率：13.49req/s] [内存消耗：1,607.40kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:00+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/console.html
+[运行时间：0.045276s] [吞吐率：22.09req/s] [内存消耗：1,608.63kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'console',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->console[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\console.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.041720s] [吞吐率：23.97req/s] [内存消耗：1,609.08kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.059125s] [吞吐率：16.91req/s] [内存消耗：2,330.11kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.010184s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:08+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.061442s] [吞吐率：16.28req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:08+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.062421s] [吞吐率：16.02req/s] [内存消耗：2,289.07kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000878s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013224s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:15+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_tags.html
+[运行时间：0.034202s] [吞吐率：29.24req/s] [内存消耗：1,604.20kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_tags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_tags[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_tags.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:15+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_tags.html?page=1&limit=10
+[运行时间：0.053588s] [吞吐率：18.66req/s] [内存消耗：2,276.80kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_tags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_tags.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_tags[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.008905s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tags` LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:17+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_tags_form?id=38
+[运行时间：0.051327s] [吞吐率：19.48req/s] [内存消耗：1,600.88kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_tags_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_tags.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '38',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_tags_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_tags_form.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:18+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_tags_id.html?id=38
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,275.68kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_tags_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_tags_form?id=38',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '38',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_tags_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009998s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000510s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:24+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/comment_list.html
+[运行时间：0.043093s] [吞吐率：23.21req/s] [内存消耗：1,605.03kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'comment_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->comment_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\comment_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:24+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_comment.html?page=1&limit=10
+[运行时间：0.096496s] [吞吐率：10.36req/s] [内存消耗：2,279.42kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/comment_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_comment[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comments` [ RunTime:0.047151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `comments` [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:27+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/comment_form?id=10
+[运行时间：0.038545s] [吞吐率：25.94req/s] [内存消耗：1,600.77kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'comment_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/comment_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->comment_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\comment_form.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:27+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_comment_id.html?id=10
+[运行时间：0.053209s] [吞吐率：18.79req/s] [内存消耗：2,276.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_comment_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/comment_form?id=10',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_comment_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comments` [ RunTime:0.009450s ]
+[ sql ] [ SQL ] SELECT * FROM `comments` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:38+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.053953s] [吞吐率：18.53req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.008756s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:38+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.056915s] [吞吐率：17.57req/s] [内存消耗：2,289.07kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001217s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.009041s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:42+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=1
+[运行时间：0.060496s] [吞吐率：16.53req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009463s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:43+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=1
+[运行时间：0.081927s] [吞吐率：12.21req/s] [内存消耗：2,284.80kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018269s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.009639s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000943s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/user_list.html
+[运行时间：0.036265s] [吞吐率：27.57req/s] [内存消耗：1,607.98kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'user_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->user_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\user_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_user_list.html?page=1&limit=10
+[运行时间：0.050936s] [吞吐率：19.63req/s] [内存消耗：2,277.56kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_user_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/user_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_user_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_web` [ RunTime:0.012862s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_web` LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `user_web` [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:23:52+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/userform?id=1
+[运行时间：0.035638s] [吞吐率：28.06req/s] [内存消耗：1,606.77kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'userform',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/user_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->userform[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\userform.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:23:52+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_user_list_id.html?id=1
+[运行时间：0.063528s] [吞吐率：15.74req/s] [内存消耗：2,276.99kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_user_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/userform?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_user_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_web` [ RunTime:0.022277s ]
+[ sql ] [ SQL ] SELECT `username`,`avatar`,`phone`,`email`,`jointime`,`sex` FROM `user_web` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000998s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:24:46+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.067018s] [吞吐率：14.92req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.012264s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:24:46+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.061479s] [吞吐率：16.27req/s] [内存消耗：2,289.07kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011618s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000559s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:24:52+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form_add
+[运行时间：0.035343s] [吞吐率：28.29req/s] [内存消耗：1,554.00kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form_add[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form_add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:25:20+08:00 ] 127.0.0.1 POST 127.0.0.1/blog/public/admin/index/add_content_list.html
+[运行时间：0.065125s] [吞吐率：15.36req/s] [内存消耗：2,248.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'add_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '98',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'title' => 'test',
+  'author' => 'test',
+  'content' => 'test',
+  'label' => '美食',
+  'status' => '1',
+  'time' => '2019-08-30 15:23:05',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->add_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.010636s ]
+[ sql ] [ SQL ] INSERT INTO `contents` (`title` , `author` , `content` , `label` , `uploadtime` , `status`) VALUES ('test' , 'test' , 'test' , '美食' , '2019-08-30 15:23:05' , '1') [ RunTime:0.002423s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:20+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.070876s] [吞吐率：14.11req/s] [内存消耗：2,330.45kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.008584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:27+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.029418s] [吞吐率：33.99req/s] [内存消耗：1,609.58kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:25:27+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.057414s] [吞吐率：17.42req/s] [内存消耗：2,330.45kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.009095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:29+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.059471s] [吞吐率：16.81req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009166s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:30+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.057869s] [吞吐率：17.28req/s] [内存消耗：2,276.76kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001378s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.015928s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:39+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form_add
+[运行时间：0.028784s] [吞吐率：34.74req/s] [内存消耗：1,554.00kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form_add[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form_add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:25:54+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.056934s] [吞吐率：17.56req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.008439s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000450s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:25:55+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.049387s] [吞吐率：20.25req/s] [内存消耗：2,276.76kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000701s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.009367s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:26:10+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.071296s] [吞吐率：14.03req/s] [内存消耗：2,446.41kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001352s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009224s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:26:11+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.063954s] [吞吐率：15.64req/s] [内存消耗：2,276.76kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011217s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000797s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:29:10+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.090388s] [吞吐率：11.06req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002119s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009932s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:29:11+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.077451s] [吞吐率：12.91req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.010869s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:31:34+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.068715s] [吞吐率：14.55req/s] [内存消耗：1,851.12kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:31:34+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.076211s] [吞吐率：13.12req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000960s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011788s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000628s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:31:38+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.075422s] [吞吐率：13.26req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001559s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.014002s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:31:39+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.082069s] [吞吐率：12.18req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013101s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:34:40+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.057382s] [吞吐率：17.43req/s] [内存消耗：1,851.12kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:34:40+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.071229s] [吞吐率：14.04req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000913s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.014543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:34:47+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.075211s] [吞吐率：13.30req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000985s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.011746s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:34:48+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.074987s] [吞吐率：13.34req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001202s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.020271s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:36:18+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.041330s] [吞吐率：24.20req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:36:19+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.086561s] [吞吐率：11.55req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001752s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.013379s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:36:25+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.074577s] [吞吐率：13.41req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.015159s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:36:25+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.074692s] [吞吐率：13.39req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012026s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:37:33+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.068996s] [吞吐率：14.49req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.011403s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:37:33+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.067577s] [吞吐率：14.80req/s] [内存消耗：2,289.71kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.010819s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:37:43+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.078876s] [吞吐率：12.68req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.012043s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:37:43+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.067834s] [吞吐率：14.74req/s] [内存消耗：2,289.71kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001668s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011470s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000618s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:38:59+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.055950s] [吞吐率：17.87req/s] [内存消耗：1,851.12kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:39:00+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.073534s] [吞吐率：13.60req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:39:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.082431s] [吞吐率：12.13req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.015556s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:39:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.107398s] [吞吐率：9.31req/s] [内存消耗：2,289.71kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001276s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.014536s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:39:39+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=1
+[运行时间：0.075414s] [吞吐率：13.26req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000919s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.008237s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:39:39+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=1
+[运行时间：0.072693s] [吞吐率：13.76req/s] [内存消耗：2,285.44kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012375s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:44:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.060234s] [吞吐率：16.60req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:44:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.078112s] [吞吐率：12.80req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008102s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:44:08+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=1
+[运行时间：0.069116s] [吞吐率：14.47req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.010043s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:44:08+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=1
+[运行时间：0.088176s] [吞吐率：11.34req/s] [内存消耗：2,285.44kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001516s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.017073s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:46:06+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.056278s] [吞吐率：17.77req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:46:07+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.091980s] [吞吐率：10.87req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011630s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.014529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.001125s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:46:11+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.080418s] [吞吐率：12.44req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.011083s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:46:11+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.088073s] [吞吐率：11.35req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.014521s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000565s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:00+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.048009s] [吞吐率：20.83req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:53:01+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.087170s] [吞吐率：11.47req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014241s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013756s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=2
+[运行时间：0.084351s] [吞吐率：11.86req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.013191s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000470s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:05+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=2
+[运行时间：0.077220s] [吞吐率：12.95req/s] [内存消耗：2,289.71kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003774s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012950s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001895s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:40+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.047862s] [吞吐率：20.89req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:53:40+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.073757s] [吞吐率：13.56req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001264s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.016764s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:44+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=1
+[运行时间：0.065132s] [吞吐率：15.35req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001513s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009864s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:53:44+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=1
+[运行时间：0.076393s] [吞吐率：13.09req/s] [内存消耗：2,285.44kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.008197s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:33+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.045645s] [吞吐率：21.91req/s] [内存消耗：1,851.37kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:55:34+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.080352s] [吞吐率：12.45req/s] [内存消耗：2,330.84kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004127s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013324s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:37+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.081887s] [吞吐率：12.21req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000660s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.011901s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:37+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.069496s] [吞吐率：14.39req/s] [内存消耗：2,277.40kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.017263s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000809s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:47+08:00 ] 127.0.0.1 POST 127.0.0.1/blog/public/admin/index/set_content.html
+[运行时间：0.083815s] [吞吐率：11.93req/s] [内存消耗：2,376.75kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'set_content',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '126',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+  'title' => 'test',
+  'author' => 'test',
+  'content' => 'test',
+  'label' => '响应式,Ajax',
+  'uploadtime' => '2019-08-30 15:55:34',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->set_content[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012811s ]
+[ sql ] [ SQL ] UPDATE `contents`  SET `title`='test',`author`='test',`content`='test',`label`='响应式,Ajax',`uploadtime`='2019-08-30 15:55:34',`status`='1'  WHERE  `id` = 79 [ RunTime:0.004100s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:47+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.067212s] [吞吐率：14.88req/s] [内存消耗：2,330.85kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.011947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:49+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.065585s] [吞吐率：15.25req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.009974s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:55:50+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.077479s] [吞吐率：12.91req/s] [内存消耗：2,277.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013506s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.004090s ]
+---------------------------------------------------------------
+[ 2019-08-30T15:58:21+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list.html
+[运行时间：0.047583s] [吞吐率：21.02req/s] [内存消耗：1,610.02kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T15:58:21+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list.html?page=1&limit=10
+[运行时间：0.071514s] [吞吐率：13.98req/s] [内存消耗：2,330.85kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `contents` LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2019-08-30T16:02:10+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form_add
+[运行时间：0.055570s] [吞吐率：18.00req/s] [内存消耗：1,554.64kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form_add[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form_add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T16:03:21+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.078049s] [吞吐率：12.81req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009761s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.010495s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2019-08-30T16:03:21+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.064936s] [吞吐率：15.40req/s] [内存消耗：2,277.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000957s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.013706s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2019-08-30T16:03:31+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form_add
+[运行时间：0.041165s] [吞吐率：24.29req/s] [内存消耗：1,554.64kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form_add[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form_add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-30T16:03:41+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/content_list_form.html?id=79
+[运行时间：0.076129s] [吞吐率：13.14req/s] [内存消耗：2,447.05kb] [文件加载：46]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'content_list_form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->content_list_form[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog\public/../application/admin\view\index\content_list_form.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.010394s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2019-08-30T16:03:41+08:00 ] 127.0.0.1 GET 127.0.0.1/blog/public/admin/index/get_content_list_id.html?id=79
+[运行时间：0.079181s] [吞吐率：12.63req/s] [内存消耗：2,277.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_content_list_id',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36',
+  'referer' => 'http://127.0.0.1/blog/public/admin/index/content_list_form.html?id=79',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_d214947968792b839fd669a4decaaffc=1566380746; PHPSESSID=39bme545fiu5caisiv3tqooel3',
+)
+[ info ] [ PARAM ] array (
+  'id' => '79',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->get_content_list_id[ C:\xampp\htdocs\blog\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001618s ] mysql:host=127.0.0.1;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contents` [ RunTime:0.012967s ]
+[ sql ] [ SQL ] SELECT * FROM `contents` WHERE  `id` = 79 LIMIT 1 [ RunTime:0.000699s ]
